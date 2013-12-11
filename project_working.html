@@ -26,25 +26,25 @@ function nextRoom(curr) {
    }
 
 function createUser()
-{
-var Char = {
-name: document.getElementById('nameBox').value,
-age: document.getElementById('ageBox').value,
-}
+	{
+	var Char = {
+	name: document.getElementById('nameBox').value,
+	age: document.getElementById('ageBox').value,
+	}
 
-document.getElementById('outputDiv').innerHTML=
-Char.name + ', who is a ' + Char.age + ' year old adventurer from the Midlands is looking for the last Nightwisp. '
-+ Char.name + ' has been following instructions given to them by a Confessed D\'Haran soldier. '
-+ Char.name + ' recently entered a forest on their way to the Nightwisp\'s home, walking slowly to not alert them. To '
-+ Char.name + '\'s horror, '
-+ Char.name + ' realized the forest line had disappeared behind him. Turning around again, '
-+ Char.name + ' watched as a woman in white had appeared before them. <p>"'
-+ Char.name + ', be not afraid," she stated. "Before you continue, there are rules to this forest you must know.<br> There are only a few commands that will work.</p><p>walk,</p><p>run,</p><p>fight,</p><p>and hide,</p><p>and your objective is to find the last Nightwisp. There will be a few encounters along the way. Use your wit to overcome them. Good luck!"</p><p>And with that parting cry, '
-+ Char.name + ' watched as the Banshee disappeared.';
+	document.getElementById('outputDiv').innerHTML=
+	Char.name + ', who is a ' + Char.age + ' year old adventurer from the Midlands is looking for the last Nightwisp. '
+	+ Char.name + ' has been following instructions given to them by a Confessed D\'Haran soldier. '
+	+ Char.name + ' recently entered a forest on their way to the Nightwisp\'s home, walking slowly to not alert them. To '
+	+ Char.name + '\'s horror, '
+	+ Char.name + ' realized the forest line had disappeared behind him. Turning around again, '
+	+ Char.name + ' watched as a woman in white had appeared before them. <p>"'
+	+ Char.name + ', be not afraid," she stated. "Before you continue, there are rules to this forest you must know.<br> There are only a few commands that will work.</p><p>walk,</p><p>run,</p><p>fight,</p><p>and hide,</p><p>and your objective is to find the last Nightwisp. There will be a few encounters along the way. Use your wit to overcome them. Good luck!"</p><p>And with that parting cry, '
+	+ Char.name + ' watched as the Banshee disappeared.';
 
-document.getElementById('room1').style.display = 'none';
-document.getElementById('outputDiv').style.display = 'block';
-}
+	document.getElementById('room1').style.display = 'none';
+	document.getElementById('outputDiv').style.display = 'block';
+	}
  </script>
 
 </head>
@@ -57,23 +57,23 @@ document.getElementById('outputDiv').style.display = 'block';
  <div id="room1">
 <!--Problem: Need the text boxes to disappear alone with Game Start button. Need the paragraph specified in createUser to appear along with the Next button-->
    <h2>The Banshee</h2>
-  <p>What is your character's name and age?</p>
-  <label for="nameBox">Name:</label>
-  <input type="text" id="nameBox">
-  <label for="ageBox">Age:</label>
-  <input type="text" id="ageBox">
-  <br>
-  <button onclick="createUser();">Game Start!</button>
-  <button onclick="nextRoom(1);">Next</button>  
- </div>
+	<p>What is your character's name and age?</p>
+	<label for="nameBox">Name:</label>
+	<input type="text" id="nameBox">
+	<label for="ageBox">Age:</label>
+	<input type="text" id="ageBox">
+	<br>
+	<button onclick="createUser();">Game Start!</button>
+	<button onclick="nextRoom(1);">Next</button>  
+</div>
 
  <div id="room2">
    <h2>Choose you Weapon</h2>
    <p>You may have either a light to guide your way, or a sword to fight your way. Which do you take?</p>
 <!--Everytime we have "you" show up from here on out I'd like to replace it with the character's name identified in the nameBox in page1. How?-->
-<button onclick="nextRoom(2);">The Light</button>
+	<button onclick="nextRoom(2);">The Light</button>
 <!--Pages 3-8 is for the Light-->
-<button onclick="nextRoom(8);">The Sword</button>
+	<button onclick="nextRoom(8);">The Sword</button>
 <!--Pages 9-14 is for the Sword-->
  </div>
  
@@ -81,7 +81,7 @@ document.getElementById('outputDiv').style.display = 'block';
  <div id="room3">
    <h2>The Sphinx</h2>
    <p>Ahead of you there is a large lion with the face of a woman. She says; "There is no way past me and you cannot go back. Answer my riddle correctly and I will let you pass unharmed. Answer it incorrectly and you will not walk out of this forest.</p>
-<p>Poor people have it. Rich people need it. If you eat it you die. What is it?"</p>
+	<p>Poor people have it. Rich people need it. If you eat it you die. What is it?"</p>
 <!--Answer: Nothing.-->
 <!--Need a text box. Right answer to a riddle will lead on to page5. Possible way to randomize which riddle is given to player? (use an if statement?)-->
     <button onclick="nextRoom(22);">Money</button>
@@ -90,39 +90,39 @@ document.getElementById('outputDiv').style.display = 'block';
  </div>
 
  <div id="room4">
-<h2>A Clearing</h2>
-<p>You look around the lit clearing, seeing an option to go to the left or forward. Which way do you go?</p>
-<button onclick="nextRoom(8);">Go left</button>
-<button onclick="nextRoom(2);">Go back</button>
+	<h2>A Clearing</h2>
+	<p>You look around the lit clearing, seeing an option to go to the left or forward. Which way do you go?</p>
+	<button onclick="nextRoom(8);">Go left</button>
+	<button onclick="nextRoom(2);">Go back</button>
 <!--Back button shows every page? What do?-->
-<button onclick="nextRoom(4);">Go forward</button>
- </div>
+	<button onclick="nextRoom(4);">Go forward</button>
+</div>
  
  <div id="room5">
-<h2>A Clearing</h2>
-<p>You look around yet another clearing - it looks safe enough. This time, do you go right or forwards?</p>
-<button onclick="nextRoom(3);">Go back</button>
-<button onclick="nextRoom(6);">Go forward</button>
-<button onclick="nextRoom(5);">Go right</button>
+	<h2>A Clearing</h2>
+	<p>You look around yet another clearing - it looks safe enough. This time, do you go right or forwards?</p>
+	<button onclick="nextRoom(3);">Go back</button>
+	<button onclick="nextRoom(6);">Go forward</button>
+	<button onclick="nextRoom(5);">Go right</button>
   </div>
 
  <div id="room6">
-<h2>Darkness!</h2>
-<p>Darkness crowds you- you can only see inches in front of you but you can hear something moving -- and it's moving fast! What do you do?</p>
-<button onclick="nextRoom(4);">Run</button>
-<button onclick="nextRoom(21);">Hide</button>
-<button onclick="nextRoom(21);">Fight</button>
+	<h2>Darkness!</h2>
+	<p>Darkness crowds you- you can only see inches in front of you but you can hear something moving -- and it's moving fast! What do you do?</p>
+	<button onclick="nextRoom(4);">Run</button>
+	<button onclick="nextRoom(21);">Hide</button>
+	<button onclick="nextRoom(21);">Fight</button>
  </div>
 
  <div id="room7">
-<h2>Clue</h2>
-<p>Ahead of you there is a shovel left in the middle of the worn trail. You grab it, ready to leave the forest, and return to the first crossroads you came across.</p>
-<button onclick="nextRoom(3):">Go back</button>
+	<h2>Clue</h2>
+	<p>Ahead of you there is a shovel left in the middle of the worn trail. You grab it, ready to leave the forest, and return to the first crossroads you came across.</p>
+	<button onclick="nextRoom(3):">Go back</button>
  </div>
 
  <div id="room8">
-<p>The ground in front of you! It's freshly turned dirt! As soon as you start digging you find an old map.</p>
-<button onclick="nextRoom(4);">Follow the map</button>
+	<p>The ground in front of you! It's freshly turned dirt! As soon as you start digging you find an old map.</p>
+	<button onclick="nextRoom(4);">Follow the map</button>
  </div>
  
 <!--Weapon pages-->
@@ -139,74 +139,73 @@ document.getElementById('outputDiv').style.display = 'block';
  </div>
 
  <div id="room10">
-<h2>A Clearing</h2>
-<p>You look around the lit clearing, seeing an option to go to the left or forward. Which way do you go?</p>
-<button onclick="nextRoom(13);">Go left</button>
-<button onclick="nextRoom(8);">Go back</button>
+	<h2>A Clearing</h2>
+	<p>You look around the lit clearing, seeing an option to go to the left or forward. Which way do you go?</p>
+	<button onclick="nextRoom(13);">Go left</button>
+	<button onclick="nextRoom(8);">Go back</button>
 <!--Back button shows every page? What do?-->
-<button onclick="nextRoom(10);">Go forward</button>
- </div>
+	<button onclick="nextRoom(10);">Go forward</button>
+</div>
  
- <div id="room11">
-<h2>A Clearing</h2>
-<p>You look around yet another clearing - it looks safe enough. This time, do you go right or forwards?</p>
-<button onclick="nextRoom(9);">Go back</button>
-<button onclick="nextRoom(12);">Go forward</button>
-<button onclick="nextRoom(11);">Go right</button>
-  </div>
+<div id="room11">
+	<h2>A Clearing</h2>
+	<p>You look around yet another clearing - it looks safe enough. This time, do you go right or forwards?</p>
+	<button onclick="nextRoom(9);">Go back</button>
+	<button onclick="nextRoom(12);">Go forward</button>
+	<button onclick="nextRoom(11);">Go right</button>
+</div>
 
- <div id="room12">
-<h2>Darkness!</h2>
-<p>Darkness crowds you- you can only see inches in front of you but you can hear something moving -- and it's moving fast! What do you do?</p>
-<button onclick="nextRoom(21);">Run</button>
-<button onclick="nextRoom(10);">Hide</button>
-<button onclick="nextRoom(21);">Fight</button>
+<div id="room12">
+	<h2>Darkness!</h2>
+	<p>Darkness crowds you- you can only see inches in front of you but you can hear something moving -- and it's moving fast! What do you do?</p>
+	<button onclick="nextRoom(21);">Run</button>
+	<button onclick="nextRoom(10);">Hide</button>
+	<button onclick="nextRoom(21);">Fight</button>
  </div>
 
- <div id="room13">
-<h2>Clue</h2>
-<p>Ahead of you there is a shovel left in the middle of the worn trail. You grab it, ready to leave the forest, and return to the first crossroads you came across.</p>
-<button onclick="nextRoom(9):">Go back</button>
- </div>
+<div id="room13">
+	<h2>Clue</h2>
+	<p>Ahead of you there is a shovel left in the middle of the worn trail. You grab it, ready to leave the forest, and return to the first crossroads you came across.</p>
+	<button onclick="nextRoom(9):">Go back</button>
+</div>
 
- <div id="room14">
-<p>The ground in front of you! It's freshly turned dirt! As soon as you start digging you find an old map.</p>
-<button onclick="nextRoom(20);">Follow the map</button>
- </div>
+<div id="room14">
+	<p>The ground in front of you! It's freshly turned dirt! As soon as you start digging you find an old map.</p>
+	<button onclick="nextRoom(20);">Follow the map</button>
+</div>
  
-  <div id="room20">
-<h1>Congratulations! You have completed the game and escaped the forest!</h1>
-<p>Play again?</p>
-<button onclick="nextRoom(0);">Yes</button>
- </div>
+<div id="room20">
+	<h1>Congratulations! You have completed the game and escaped the forest!</h1>
+	<p>Play again?</p>
+	<button onclick="nextRoom(0);">Yes</button>
+</div>
 
- <div id="room21">
-<h1>Congratulations! You have completed the game and escaped the forest!</h1>
-<p>Play again?</p>
-<button onclick="'project.html'"> Yes</button>
- </div>
+<div id="room21">
+	<h1>Congratulations! You have completed the game and escaped the forest!</h1>
+	<p>Play again?</p>
+	<button onclick="'project.html'"> Yes</button>
+</div>
 <!--I'd like for the page to clear before starting over but it's not -- why?-->
  
- <div id="room23">
+<div id="room23">
 <!--Page for incorrect Sphinx answer when having a light-->
-<h1>The Sphinx Attacks! What do you do?</h1>
-<button onclick="nextRoom(3);">Run</button>
-<button onclick="nextRoom(21);">Fight</button>
- </div>
+	<h1>The Sphinx Attacks! What do you do?</h1>
+	<button onclick="nextRoom(3);">Run</button>
+	<button onclick="nextRoom(21);">Fight</button>
+</div>
  
  <div id="room24">
 <!--Page for incorrect Sphinx answer when having a light-->
-<h1>The Sphinx Attacks! What do you do?</h1>
-<button onclick="nextRoom(21);">Run</button>
-<button onclick="nextRoom(9);">Fight</button>
- </div>
+	<h1>The Sphinx Attacks! What do you do?</h1>
+	<button onclick="nextRoom(21);">Run</button>
+	<button onclick="nextRoom(9);">Fight</button>
+</div>
  
-  <div id="room22">
-<h1>You have Died. Try again?<h1>
-<button onclick="'project.html'"> Play Again</button>
- </div>
+ <div id="room22">
+	<h1>You have Died. Try again?<h1>
+	<button onclick="'project.html'"> Play Again</button>
+</div>
 <!--I'd like for the page to clear before starting over but it's not -- why?-->
-
 
 </body>
 </html>
